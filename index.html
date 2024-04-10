@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollprogress/3.0.2/scrollProgress.min.js" integrity="sha512-byPRtjKlVcLtIxpv4fTPZtpTBlQMZS4wWA70Z9KVkxyKtbHCmZl+fhFpmomfQFDAAKhka22cKTf9bdnI9abv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Eurasion Solutions</title>
@@ -49,50 +50,59 @@
     </div>
 
     <main
-      class="flex items-center justify-center relative p-4 main-header min-h-[200px] relative"
+      class="flex items-center justify-center relative p-4 main-header min-h-[400px] relative"
     >
       <div
         class="bg-black py-4 px-8 rounded-md absolute top-0 left-0 right-0 bottom-0 opacity-50"
       ></div>
-      <h1 class="text-[24px] md:text-[46px] font-bold text-center text-white z-[2]">
-        Сертификат о происхождении товара формы CT-KZ
-      </h1>
+      <div class="z-[2]">
+        <h2 class="text-white z-[2] text-center text-[18px] md:text-[22px]">Лидер в области сертификации</h2>
+        <h1
+          class="text-[24px] md:text-[46px] font-bold text-center text-white z-[2]"
+        >
+          Сертификат о происхождении товара формы CT-KZ
+        </h1>
+      </div>
     </main>
 
-    <div
-      class="wrapper bg-[#1E293B] text-white mt-[50px] p-6 md:rounded-md space-y-5 my-4"
-    >
-      <h2 class="text-[24px] mb-4 border-b border-b-white pb-4">Почему мы?</h2>
-      <div class="p-3 space-y-4">
+    <div class="wrapper text-white mt-[50px] p-6 md:rounded-md space-y-5 my-4">
+      <h2
+        class="text-[28px] mb-4 border-b border-b-white pb-4 text-black text-center font-bold"
+      >
+        Почему мы?
+      </h2>
+      <div class="md:grid md:grid-cols-2 lg:grid-cols-4">
         <div
-          class="p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
+          class="flex flex-col items-center p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
         >
-          <div><img src="images/icons/user.svg" alt="" /></div>
-          <p>Возможность бесплатно проконсультироваться</p>
+          <div class=""><img src="images/benefits/chat.png" alt="" /></div>
+          <p class="text-center">Возможность бесплатно проконсультироваться</p>
         </div>
         <div
-          class="p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
+          class="flex flex-col items-center p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
         >
-          <div><img src="images/icons/arrow-up.svg" alt="" /></div>
-          <p>Оперативность оформления всех необходимых документов</p>
+          <div><img src="images/benefits/mail.png" alt="" /></div>
+          <p class="text-center">
+            Оперативность оформления всех необходимых документов
+          </p>
         </div>
         <div
-          class="p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
+          class="flex flex-col items-center p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
         >
-          <div><img src="images/icons/start.svg" alt="" /></div>
-          <p>Отличный уровень обслуживания</p>
+          <div><img src="images/benefits/price-tag.png" alt="" /></div>
+          <p class="text-center">Отличный уровень обслуживания</p>
         </div>
         <div
-          class="p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
+          class="flex flex-col items-center p-4 space-y-3 text-[18px] bg-white text-black rounded-md"
         >
-          <div><img src="images/icons/work.svg" alt="" /></div>
-          <p>Компетентные, опытные сотрудники</p>
+          <div><img src="images/benefits/comment.png" alt="" /></div>
+          <p class="text-center">Компетентные, опытные сотрудники</p>
         </div>
       </div>
     </div>
 
     <div class="wrapper space-y-4 mt-10 p-4 md:p-0">
-      <h2 class="text-[28px]">
+      <h2 class="text-[28px] mb-10">
         Порядок оформления сертификата о происхождении товара формы «СТ-KZ»
       </h2>
 
@@ -125,7 +135,9 @@
     </div>
 
     <div class="wrapper mt-[40px]">
-      <div class="md:w-[80%] flex space-x-5 mt-10 md:rounded-r-2xl p-4 bg-[#BFEDFC]">
+      <div
+        class="md:w-[80%] flex space-x-5 mt-10 md:rounded-r-2xl p-4 bg-[#BFEDFC]"
+      >
         <div class="space-y-4">
           <h2 class="text-[28px] flex items-center">
             Применение и оформление сертификата
@@ -149,7 +161,7 @@
             >
           </p>
         </div>
-        <div class="w-[30%]">
+        <div class="hidden md:block w-[30%]">
           <i class="pr-2"
             ><img src="images/certificate/key.svg" class="w-[250px]" alt="key"
           /></i>
@@ -161,7 +173,7 @@
       <div
         class="flex md:w-[80%] space-x-5 ml-auto mt-10 md:rounded-l-2xl p-4 bg-[#D9F7E3]"
       >
-        <div class="w-[30%]">
+        <div class="hidden md:block w-[30%]">
           <img src="images/certificate/time.svg" class="w-[75px]" alt="" />
         </div>
         <div class="space-y-4">
@@ -185,12 +197,60 @@
     </div>
 
     <div class="wrapper">
-      <div class="wpp py-8 flex items-center justify-center space-x-8 mt-10 shadow-xl rounded-md">
-        <h2 class="text-[24px] w-[70%] text-center">Есть вопрос? Напишите нам в WhatsApp</h2>
-        <a href="tel" class="bg-[#73EB81] text-white rounded-[100px] py-4 px-8 flex">
-          <i><img src="images/certificate/whatsapp.svg" alt="" class="pr-2"></i>
+      <div
+        class="wpp py-8 flex items-center justify-center space-x-8 mt-10 shadow-xl rounded-md"
+      >
+        <h2 class="text-[24px] w-[70%] text-center">
+          Есть вопрос? Напишите нам в WhatsApp
+        </h2>
+        <a
+          href="tel"
+          class="bg-[#73EB81] text-white rounded-[100px] py-4 px-8 flex"
+        >
+          <i
+            ><img src="images/certificate/whatsapp.svg" alt="" class="pr-2"
+          /></i>
           WhatsApp
-        </a >
+        </a>
+      </div>
+    </div>
+
+    <div class="wrapper md:flex justify-around items-center mt-[40px]">
+      <div class="hidden md:flex md:rotate-12 justify-center py-[40px] md:py-0">
+        <img src="images/form/paper.png" class="max-w-[200px]" alt="" />
+      </div>
+      <div class="shadow-lg">
+        <div class="bg-[#1E293B] p-4 text-center rounded-t-lg">
+          <h2 class="text-[22px] text-white">
+            Получите бесплатную консультацию специалиста
+          </h2>
+        </div>
+
+        <div class="w-full p-4">
+          <form action="" class="space-y-4">
+            <div>
+              <input
+                type="text"
+                placeholder="Введите ваше имя"
+                class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Введите ваш телефон"
+                class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
+              />
+            </div>
+            <div class="max-w-[360px] m-auto">
+              <button
+                class="bg-[#1e293b] text-white p-4 w-full rounded-lg hover:scale-105 transition"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>

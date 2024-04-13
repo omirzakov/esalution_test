@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
@@ -20,13 +26,28 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollprogress/3.0.2/scrollProgress.min.js" integrity="sha512-byPRtjKlVcLtIxpv4fTPZtpTBlQMZS4wWA70Z9KVkxyKtbHCmZl+fhFpmomfQFDAAKhka22cKTf9bdnI9abv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollprogress/3.0.2/scrollProgress.min.js"
+      integrity="sha512-byPRtjKlVcLtIxpv4fTPZtpTBlQMZS4wWA70Z9KVkxyKtbHCmZl+fhFpmomfQFDAAKhka22cKTf9bdnI9abv/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Eurasion Solutions</title>
   </head>
-  <body class="pb-10">
-    <div class="wrapper">
+  <body>
+    <header class="wrapper">
       <div class="flex items-center justify-between p-4">
         <div>
           <img src="images/logo.png" alt="" class="header-logo" />
@@ -47,16 +68,18 @@
           <p>Пн-пт: с 10:00 до 19:00</p>
         </div>
       </div>
-    </div>
+    </header>
 
     <main
-      class="flex items-center justify-center relative p-4 main-header min-h-[400px] relative"
+      class="flex items-center justify-center relative p-4 main-header min-h-[calc(100vh-105px)] relative"
     >
       <div
         class="bg-black py-4 px-8 rounded-md absolute top-0 left-0 right-0 bottom-0 opacity-50"
       ></div>
       <div class="z-[2]">
-        <h2 class="text-white z-[2] text-center text-[18px] md:text-[22px]">Лидер в области сертификации</h2>
+        <h2 class="text-white z-[2] text-center text-[18px] md:text-[22px]">
+          Лидер в области сертификации
+        </h2>
         <h1
           class="text-[24px] md:text-[46px] font-bold text-center text-white z-[2]"
         >
@@ -101,8 +124,8 @@
       </div>
     </div>
 
-    <div class="wrapper space-y-4 mt-10 p-4 md:p-0">
-      <h2 class="text-[28px] mb-10">
+    <div class="wrapper space-y-4 mt-10 md:mt-[80px] p-4 md:p-0">
+      <h2 class="text-[28px] mb-10 font-bold">
         Порядок оформления сертификата о происхождении товара формы «СТ-KZ»
       </h2>
 
@@ -134,7 +157,7 @@
       </div>
     </div>
 
-    <div class="wrapper mt-[40px]">
+    <div class="wrapper mt-10 md:mt-[80px]">
       <div
         class="md:w-[80%] flex space-x-5 mt-10 md:rounded-r-2xl p-4 bg-[#BFEDFC]"
       >
@@ -169,7 +192,7 @@
       </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper my-10">
       <div
         class="flex md:w-[80%] space-x-5 ml-auto mt-10 md:rounded-l-2xl p-4 bg-[#D9F7E3]"
       >
@@ -196,11 +219,94 @@
       </div>
     </div>
 
-    <div class="wrapper">
+
+    <div class="experience-rates min-h-[300px]">
+      <div class="bg-black width-full min-h-[300px] opacity-50">
+        <div class="wrapper experience-list z-10">
+          <div>
+            test
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper my-10 md:my-[80px]">
+      <h2 class="text-[18px] md:text-[28px] my-10 font-bold">
+        Аттестаты экспертов-аудиторов
+      </h2>
+
+      <div class="your-class !space-x-3">
+        <div>
+          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+        <div>
+          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+        <div>
+          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="images/attestats/attetstats.jpg"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper md:my-[80px]">
       <div
         class="wpp py-8 flex items-center justify-center space-x-8 mt-10 shadow-xl rounded-md"
       >
-        <h2 class="text-[24px] w-[70%] text-center">
+        <h2 class="text-[16px] md:text-[24px] w-[70%] text-center">
           Есть вопрос? Напишите нам в WhatsApp
         </h2>
         <a
@@ -253,5 +359,32 @@
         </div>
       </div>
     </div>
+
+    <footer class="bg-[#1E293B] min-h-[400px] mt-10 md:mt-[80px] p-4">
+      <div class="wrapper md:flex justify-between space-y-4 md:space-y-0">
+        <div>
+          <p class="text-white md:text-[22px] text-[20px]">Навигация</p>
+          <nav class="list-none text-white mt-4 space-y-3">
+            <li>Услуги</li>
+            <li>Сертификаты</li>
+            <li>Документы</li>
+            <li>О компании</li>
+            <li>Контакты</li>
+          </nav>
+        </div>
+        <div>
+          <img src="images/logo.png" alt="" class="max-w-[150px] mt-10">
+        </div>
+        <div>
+          <p class="text-white md:text-[22px] text-[20px]">Контакты</p>
+          <nav class="list-none text-white mt-4">
+            <li>+7 776 288 49 55</li>
+            <li>+7 776 288 49 55</li>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

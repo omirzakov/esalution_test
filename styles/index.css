@@ -26,10 +26,11 @@
 }
 
 .experience-rates {
-    background: url('../images/benefits/benefit.webp');
+    background: url('../images/benefits/benefit.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 16px;
 }
 
 .slick-arrow {

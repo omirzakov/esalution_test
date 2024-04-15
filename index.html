@@ -71,17 +71,19 @@
     </header>
 
     <main
-      class="flex items-center justify-center relative p-4 main-header min-h-[calc(100vh-105px)] relative"
+      class="flex items-center justify-center relative p-4 main-header min-h-[350px]"
     >
       <div
         class="bg-black py-4 px-8 rounded-md absolute top-0 left-0 right-0 bottom-0 opacity-50"
       ></div>
       <div class="z-[2]">
-        <h2 class="text-white z-[2] text-center text-[18px] md:text-[22px]">
+        <h2
+          class="text-white z-[2] text-center text-[18px] md:text-[22px] animate__animated animate__bounceInDown"
+        >
           Лидер в области сертификации
         </h2>
         <h1
-          class="text-[24px] md:text-[46px] font-bold text-center text-white z-[2]"
+          class="text-[24px] md:text-[46px] font-bold text-center text-white z-[2] animate__animated animate__bounceInDown"
         >
           Сертификат о происхождении товара формы CT-KZ
         </h1>
@@ -135,7 +137,7 @@
         >
           <img src="images/expert_3.svg" alt="" />
           <p class="text-[#1E293B] text-[20px] text-center">
-            Экспертиза происхождения
+            Сбор всех необходимых документов для СТ KZ
           </p>
         </div>
         <div
@@ -143,7 +145,7 @@
         >
           <img src="images/expert_2.svg" alt="" />
           <p class="text-[#1E293B] text-[20px] text-center max-w-[250px]">
-            Подача заявки на получение сертификата
+            2. Выезд независимого эксперта
           </p>
         </div>
         <div
@@ -151,7 +153,15 @@
         >
           <img src="images/expert_1.svg" alt="" />
           <p class="text-[#1E293B] text-[20px] text-center max-w-[250px]">
-            Заключение договора между Региональной палатой
+            Подача заявки в Региональную палату для получения СТ KZ
+          </p>
+        </div>
+        <div
+          class="shadow-lg md:w-[33.3333%] flex flex-col items-center justify-center min-h-[300px]"
+        >
+          <img src="images/expert_2.svg" alt="" />
+          <p class="text-[#1E293B] text-[20px] text-center max-w-[250px]">
+            Получение готового сертификата о происхождении товара формы «СТ-KZ»
           </p>
         </div>
       </div>
@@ -159,10 +169,10 @@
 
     <div class="wrapper mt-10 md:mt-[80px]">
       <div
-        class="md:w-[80%] flex space-x-5 mt-10 md:rounded-r-2xl p-4 bg-[#BFEDFC]"
+        class="md:w-[80%] flex space-x-5 mt-10 md:rounded-r-2xl p-4 shadow-lg"
       >
         <div class="space-y-4">
-          <h2 class="text-[28px] flex items-center">
+          <h2 class="text-[28px] flex items-center font-bold">
             Применение и оформление сертификата
           </h2>
 
@@ -194,13 +204,13 @@
 
     <div class="wrapper my-10">
       <div
-        class="flex md:w-[80%] space-x-5 ml-auto mt-10 md:rounded-l-2xl p-4 bg-[#D9F7E3]"
+        class="flex md:w-[80%] space-x-5 ml-auto mt-10 md:rounded-l-2xl p-4 shadow-lg"
       >
         <div class="hidden md:block w-[30%]">
           <img src="images/certificate/time.svg" class="w-[75px]" alt="" />
         </div>
         <div class="space-y-4">
-          <h2 class="text-[28px] flex-1">Срок выдачи сертификата</h2>
+          <h2 class="text-[28px] flex-1 font-bold">Срок выдачи сертификата</h2>
           <p>
             Срок выдачи сертификата о происхождении товара формы «СТ-KZ» или
             письменного мотивированного решения об отказе в его выдаче
@@ -219,85 +229,39 @@
       </div>
     </div>
 
+    <div class="wrapper my-10 p-4 md:my-[80px]">
+      <h2 class="text-[28px] my-10 font-bold">Наши партнёры</h2>
 
-    <div class="experience-rates min-h-[300px]">
-      <div class="bg-black width-full min-h-[300px] opacity-50">
-        <div class="wrapper experience-list z-10">
-          <div>
-            test
-          </div>
+      <div
+        class="your-class !space-x-3 flex justify-center items-center min-h-[300px] max-h-[250px]"
+      >
+        <div class="flex justify-center items-center md:max-h-[250px]">
+          <img
+            src="images/partners/gorilla.png"
+            alt=""
+            class="md:max-w-[300px] md:max-h-[250px]"
+          />
         </div>
-      </div>
-    </div>
-
-    <div class="wrapper my-10 md:my-[80px]">
-      <h2 class="text-[18px] md:text-[28px] my-10 font-bold">
-        Аттестаты экспертов-аудиторов
-      </h2>
-
-      <div class="your-class !space-x-3">
-        <div>
-          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
+        <div class="flex justify-center items-start max-h-[250px]">
+          <img
+            src="images/partners/grundfos.svg"
+            alt=""
+            class="md:max-w-[300px] md:h-[250px]"
+          />
         </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
+        <div class="flex justify-center items-center md:max-h-[250px]">
+          <img
+            src="images/partners/ravon.svg"
+            alt=""
+            class="md:max-w-[150px] md:h-[250px]"
+          />
         </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
-        </div>
-        <div>
-          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
-        </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
-        </div>
-        <div>
-          <img src="images/attestats/attetstats.jpg" alt="" class="w-[300px]" />
-        </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="images/attestats/attetstats.jpg"
-              alt=""
-              class="w-[300px]"
-            />
-          </div>
+        <div class="flex justify-center items-center">
+          <img
+            src="images/partners/weleda.png"
+            alt=""
+            class="md:max-w-[300px] md:h-[250px]"
+          />
         </div>
       </div>
     </div>
@@ -321,41 +285,59 @@
       </div>
     </div>
 
-    <div class="wrapper md:flex justify-around items-center mt-[40px]">
-      <div class="hidden md:flex md:rotate-12 justify-center py-[40px] md:py-0">
-        <img src="images/form/paper.png" class="max-w-[200px]" alt="" />
-      </div>
-      <div class="shadow-lg">
-        <div class="bg-[#1E293B] p-4 text-center rounded-t-lg">
-          <h2 class="text-[22px] text-white">
-            Получите бесплатную консультацию специалиста
-          </h2>
-        </div>
+    <div class="experience-rates p-4 relative my-10">
+      <div class="z-10">
+        <div class="wrapper md:flex md:justify-between mt-[40px]">
+          <div>
+            <h2 class="md:text-[28px] my-10 font-bold text-white">
+              Свяжитесь с нами
+            </h2>
+            <div class="space-y-4">
+              <div>
+                <a href="" class="text-[18px] md:text-[32px] text-white"
+                  >+7 (777) 777-77-77</a
+                >
+              </div>
+              <div class="pb-5 md:pb-0">
+                <a href="" class="text-[18px] md:text-[28px] text-white"
+                  >test@esalution.kz</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="shadow-lg bg-white rounded-lg">
+            <div class="bg-[#1E293B] p-4 text-center rounded-t-lg">
+              <h2 class="text-[22px] text-white">
+                Получите бесплатную консультацию специалиста
+              </h2>
+            </div>
 
-        <div class="w-full p-4">
-          <form action="" class="space-y-4">
-            <div>
-              <input
-                type="text"
-                placeholder="Введите ваше имя"
-                class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
-              />
+            <div class="w-full p-4">
+              <form action="" class="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Введите ваше имя"
+                    class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Введите ваш телефон"
+                    class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
+                  />
+                </div>
+                <div class="max-w-[360px] m-auto">
+                  <button
+                    class="bg-[#1e293b] text-white p-4 w-full rounded-lg hover:scale-105 transition"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </form>
             </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Введите ваш телефон"
-                class="w-full border border-[#1E293B] p-4 rounded-md focus:border-[#1E293B]"
-              />
-            </div>
-            <div class="max-w-[360px] m-auto">
-              <button
-                class="bg-[#1e293b] text-white p-4 w-full rounded-lg hover:scale-105 transition"
-              >
-                Отправить
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -373,7 +355,7 @@
           </nav>
         </div>
         <div>
-          <img src="images/logo.png" alt="" class="max-w-[150px] mt-10">
+          <img src="images/logo.png" alt="" class="max-w-[150px] mt-10" />
         </div>
         <div>
           <p class="text-white md:text-[22px] text-[20px]">Контакты</p>
